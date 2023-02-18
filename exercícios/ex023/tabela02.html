@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, blueviolet, violet);
+            background-attachment: fixed;
+       
+        }
+
+   
+        table{
+            width:500px;
+            border-collapse: collapse;
+            position: relative;   
+        }
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bolder;
+
+        }
+        th , td{
+            border: 1px solid black;
+            padding:5px;
+        }
+        thead,tfoot{
+            background-color:dimgray;
+            color: white;    
+        }
+        thead tr th{
+            position:sticky;
+            top: -1px;
+            background-color: dimgray;
+
+        }
+        tbody>tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody>tr:nth-child(odd){
+            background-color: white;
+           
+        }
+
+        .num{
+            width: 50px;
+            text-align: right;
+        }
+        .pct{
+            width: 50px;
+            text-align: right;
+        }
+        .ttl{
+            width: 100px;
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas grandes</h1>
+<div id="container">
+    
+        <table>
+    
+            <caption>
+                População por Unidade Federativa
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">% da população total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">46 024 937</td>
+                    <td class="pct">22,2%</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="pct">10,0%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">15 089 929</td>
+                    <td class="pct">8,0%</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                    <td class="pct">7,1%</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">10 444 526</td>
+                    <td class="pct">5,7%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 693 929</td>
+                    <td class="pct">5,3%</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">8 796 448</td>
+                    <td class="pct">4,4%</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 452 381</td>
+                    <td class="pct">4,3%</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">7 581 051</td>
+                    <td class="pct">4,1%</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">6 248 436</td>
+                    <td class="pct">3,7%</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">6 003 788</td>
+                    <td class="pct">3,3%</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">6 574 789</td>
+                    <td class="pct">3,3%</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">3 514 952</td>
+                    <td class="pct">1,9%</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">3 766 528	</td>
+                    <td class="pct">1,9%</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">3 483 985</td>
+                    <td class="pct">1,9%</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 035 122</td>
+                    <td class="pct">1,8%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 168 027</td>
+                    <td class="pct">1,6%</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 118 360</td>
+                    <td class="pct">1,6%</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 120 494</td>
+                    <td class="pct">1,5%</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2,923,369</td>
+                    <td class="pct">1,4%</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 449 024</td>
+                    <td class="pct">1,4%</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 068 017</td>
+                    <td class="pct">1,1%</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 562 409</td>
+                    <td class="pct">0,8%</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 383 445</td>
+                    <td class="pct">0,8%</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">733 559</td>
+                    <td class="pct">0,4%</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">669 526</td>
+                    <td class="pct">0,4%</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">450 479</td>
+                    <td class="pct">0,3%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td class="ttl"><strong>207 883 699</strong></td>
+            </tfoot>
+        </table>
+</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id nulla quisquam obcaecati numquam praesentium facilis laborum molestias quos aperiam, in saepe ratione, sequi ipsa consectetur! Incidunt, modi deleniti! Odit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat quas deserunt est perferendis dolores beatae. Mollitia officiis voluptates quam veritatis, quis quod expedita facilis adipisci deleniti dolore numquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex fugiat culpa hic. Magni nisi error, sunt nihil molestias cupiditate officia sit, odit odio doloremque sequi soluta voluptate vel maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus autem temporibus eius laudantium, optio commodi soluta velit corrupti minima dicta aperiam libero at. Necessitatibus voluptatum saepe sequi est iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laboriosam blanditiis quidem dolorem! Repellendus, impedit magnam quam illum quidem natus maxime dolorum. Id veniam consequatur ipsa suscipit voluptate nihil fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum illo excepturi sit. Provident, saepe cupiditate velit odit accusamus nihil illo, recusandae doloremque accusantium pariatur iusto fuga vero, soluta hic!</p>
+    
+</body>
+</html>

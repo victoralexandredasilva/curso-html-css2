@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        table{
+
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            font-weight: bolder;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .cnome{
+            background-color: rgb(224, 224, 148);
+            }
+        .cgrupo{
+            background-color: rgb(110, 43, 152);
+        }
+        
+        div#container{
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body> 
+    <div id="container">
+            <table>
+               <colgroup>
+                   <col class="cnome">
+                   <col span="3" class="cgrupo">
+        
+               </colgroup>
+               <caption>Cadastro</caption>
+               <thead>
+                   <th>Nome</th>
+                   <th>Idade</th>
+                   <th>Sexo</th>
+                   <th>Profissão</th>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Victor</td>
+                       <td>17</td>
+                       <td>Masculino</td>
+                       <td>Engenheiro</td>
+                   </tr>
+                   <tr>
+                       <td>Marcelo</td>
+                       <td>22</td>
+                       <td>Masculino</td>
+                       <td>Médico</td>
+                   </tr>
+                   <tr>
+                       <td>João</td>
+                       <td>25</td>
+                       <td>Masculino</td>
+                       <td>Advogado</td>
+                   </tr>
+                   <tr>
+                       <td>Liliane</td>
+                       <td>30</td>
+                       <td>Feminino</td>
+                       <td>Psicóloga</td>
+                   </tr>
+                   <tr>
+                       <td>Mariana</td>
+                       <td>23</td>
+                       <td>Feminino</td>
+                       <td>Professora</td>
+                   </tr>
+                   <tr>
+                       <td>Ricardo</td>
+                       <td>35</td>
+                       <td>Masculino</td>
+                       <td>Jogador</td>
+                   </tr>
+                   <tr>
+                       <td>Andreia</td>
+                       <td>19</td>
+                       <td>Feminino</td>
+                       <td>Vendedora</td>
+                   </tr>
+                   <tr>
+                       <td>Fátima</td>
+                       <td>52</td>
+                       <td>Feminino</td>
+                       <td>Zeladora</td>
+                   </tr>
+                   <tr>
+                       <td>José</td>
+                       <td>54</td>
+                       <td>Masculino</td>
+                       <td>Autônomo</td>
+                   </tr>
+                   <tr>
+                       <td>Giovane</td>
+                       <td>25</td>
+                       <td>Masculino</td>
+                       <td>Gerente</td>
+                   </tr>
+               </tbody>
+           </table>
+    </div>
+</body>
+</html>
