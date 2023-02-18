@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media print {
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-color:rgb(183, 181, 181);
+    }
+
+    main{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-color:rgb(214, 213, 213);
+    }
+
+    main{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        background-color:rgb(204, 203, 203)
+        }
+
+    main{
+        width: 800px;
+    }
+}
+
+
+
