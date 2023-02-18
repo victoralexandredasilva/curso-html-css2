@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*Tela em modo Paisagem*/
+
+body{
+    background: url(../imagens/cev-landscape.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: bottom center;
+}
