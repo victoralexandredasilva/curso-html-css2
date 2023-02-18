@@ -13,6 +13,7 @@ body,html{
 header{
     background-color: rgb(153, 153, 153);
     margin-bottom: 10px;
+    
 }
 
 header h1{
@@ -21,23 +22,36 @@ header h1{
     padding-top: 10px;
 }
 
-menu li{
-    display: inline-block;
+i#burger{
+    background-color: rgb(47, 47, 47);
+    display: block;
+    text-align: center;
+    color: white;
     padding: 10px;
-    padding-left: 0px;
-    padding-right: 3px;
+    cursor: pointer;
+}
+
+i#burger:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
 }
 
 menu a{
+    display:block;
+    text-align: center;
     background-color: rgb(84, 84, 84);
     color: white;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid rgb(116, 115, 115);
+    border-top: 2px solid rgb(160, 160, 160);
 }
 
 menu a:hover{
-    background-color:rgb(117, 117, 117) ;
+    background-color:grey ;
 }
 
 main{
@@ -47,14 +61,12 @@ main{
     border-radius: 7px;
     margin: auto;
 }
-article{
-    padding:10px;
-}
-
 article h1{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 article p{
     text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
 }
