@@ -1,0 +1,108 @@
+@media screen and (min-width:900px) {
+    h1 {
+        font-size: 40pt;
+    }
+    
+    h2 {
+        font-size: 28pt;
+    }
+    
+    p {
+        font-size: 18pt;
+    }
+
+    header#main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100vw;
+        position: fixed;
+    }
+
+    header#main h1 {
+        font-size: 22pt;
+        margin-left: 100px;
+    }
+
+    header#main nav {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    li {
+        margin-right: 30px;
+    }
+
+    li a {
+        font-size: 14pt;
+    }
+
+    section {
+        padding-top: 80px;
+    }
+
+    #section-three, #section-five {
+        height: 100vh;
+    }
+
+    
+
+    #section-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .header-section-one {
+        background-color: transparent;
+        width: 500px;
+        padding-right: 20px;
+    }
+
+    #section-two {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-box-section-two {
+        width: 650px;
+    }
+
+    .box-texts {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .box-text {
+        width: 400px;
+    }
+
+    .header-pricing {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .table {
+        overflow-x: hidden;
+    }
+
+    table {
+        width: 800px;
+    }
+
+    .header-section-contact {
+        width: 500px;
+        background: transparent;
+        padding-bottom: 50px;
+    }
+}
