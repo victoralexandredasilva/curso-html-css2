@@ -1,0 +1,124 @@
+/* fonts
+font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100vh;
+    background: linear-gradient( 45deg, rgb(22, 16, 16), rgb(143, 98, 78));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+hr#short {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.text1::before {
+    content: '1.';
+    padding-right: 5px;
+}
+
+.text2:before {
+    content: '2.';
+    padding-right: 5px;
+}
+
+.text3::before {
+    content: '3.';
+    padding-right: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff2e7;
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+}
+
+/*                                                                                                                        */
+
+
+section .box-primary-ballebot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .box-primary-ballebot img {
+    margin-left: 200px;
+}
+
+section .box-primary-ballebot h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 45pt;
+    padding-bottom: 30px;
+}
+
+section .box-primary-ballebot p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18pt;
+    padding-bottom: 20px;
+}
+
+section .box-primary-ballebot button {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18pt;
+    font-family: 'Sarala', sans-serif;
+    background-color: rgb(248, 224, 224);
+}
+
+section .box-secundary-ballebot {
+    text-align: center;
+}
+
+section .box-secundary-ballebot h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 18pt;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section .box-secundary-ballebot p {
+    font-family: 'Sarala', sans-serif;
+    padding-bottom: 20px;
+    font-size: 15pt;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+footer img {
+    width: 300px;
+}
