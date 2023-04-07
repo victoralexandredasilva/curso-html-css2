@@ -1,0 +1,102 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    color: #fff;
+    background-color: #1e1d1d;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+}
+
+header h1 {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    display: block;
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 14.5pt;
+    padding-top: 10px;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(141, 5, 141);
+}
+
+header nav ul li button {
+    color: #f3f3f3;
+    background: transparent;
+    font-size: 14.5pt;
+    padding: 10px 20px;
+    border: 3px solid rgb(141, 5, 141);
+    border-radius: 15px;
+    transition: .3s;
+}
+
+header nav ul li button:hover {
+    background-color: rgb(141, 5, 141);
+}
+
+section {
+    display: flex;
+    padding: 30px 100px;
+}
+
+section .box-main {
+    max-width: 700px;
+}
+
+section .box-main h1 {
+    font-size: 50pt;
+    line-height: 80px;
+}
+
+section .box-main p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 14pt;
+}
+
+section .box-main .text-purple {
+    color: rgb(141, 5, 141);
+}
+
+input {
+    width: 400px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 12pt;
+}
+
+button#button-enviar {
+    padding: 15px 65px;
+    border-radius: 20px;
+    background-color: rgb(141, 5, 141);
+    color: #f3f3f3;
+    font-size: 13pt;
+    border: none;
+    outline: none;
+}
