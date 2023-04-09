@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    background: rgba(0, 0, 0, 0.664);
+    color: white;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-size: 10pt;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header span, header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header img:hover {
+    box-shadow: 0px 0px 10px rgba(204, 203, 203, 0.378);
+}
+
+header span {
+    margin-top: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+section img {
+    margin-bottom: 30px;
+}
+
+section .box-input {
+    background-color: transparent;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(75, 74, 74);
+    display: flex;
+    margin-bottom: 30px;
+}
+
+section .box-input:hover {
+    background-color: rgb(56, 56, 56);
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section .box-input input {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 13pt;
+}
+
+span#search {
+    font-size: 16pt;
+    color:gainsboro;
+    margin-top: 4px;
+    cursor: default;
+}
+
+span {
+    color: gainsboro;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+button.main {
+    background-color: rgb(53, 53, 53);
+    color: gainsboro;
+    font-size: 11pt;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.main:hover {
+    box-shadow: 0px 0px 2px gainsboro;
+}
+
+button.main a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(24, 24, 24, 0.821);
+    margin-top: 302px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(151, 149, 149);
+    margin-right: 25px;
+    font-size: 11pt;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer button {
+    background-color: transparent;
+    color: rgb(151, 149, 149);
+    font-size: 11pt;
+    border: none;
+    outline: none;
+}
+
+footer button:hover {
+    text-decoration: underline;
+
+}
